@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum EvianSignature: String {
+    case feed = "https://t.tiktok.com/api/item_list/?count=30&id=1&type=5&secUid=&maxCursor=1&minCursor=0&sourceType=12&appId=1233"
+}

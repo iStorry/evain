@@ -3,27 +3,90 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		914BFF4C24AD66DF00A2703E /* EvainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF3924AD66DE00A2703E /* EvainApp.swift */; };
 		914BFF4D24AD66DF00A2703E /* EvainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF3924AD66DE00A2703E /* EvainApp.swift */; };
-		914BFF4E24AD66DF00A2703E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF3A24AD66DE00A2703E /* ContentView.swift */; };
-		914BFF4F24AD66DF00A2703E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF3A24AD66DE00A2703E /* ContentView.swift */; };
+		914BFF4E24AD66DF00A2703E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF3A24AD66DE00A2703E /* SplashView.swift */; };
+		914BFF4F24AD66DF00A2703E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF3A24AD66DE00A2703E /* SplashView.swift */; };
 		914BFF5024AD66DF00A2703E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914BFF3B24AD66DF00A2703E /* Assets.xcassets */; };
 		914BFF5124AD66DF00A2703E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914BFF3B24AD66DF00A2703E /* Assets.xcassets */; };
+		914BFF6024AD6DD200A2703E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF5F24AD6DD200A2703E /* MainView.swift */; };
+		914BFF6124AD6DD200A2703E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF5F24AD6DD200A2703E /* MainView.swift */; };
+		914BFF6424AD6F9A00A2703E /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = 914BFF6324AD6F9A00A2703E /* SwiftyUserDefaults */; };
+		914BFF6724AD6FC800A2703E /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF6624AD6FC800A2703E /* Defaults.swift */; };
+		914BFF6824AD6FC800A2703E /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF6624AD6FC800A2703E /* Defaults.swift */; };
+		914BFF6A24AD752500A2703E /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF6924AD752500A2703E /* CornerRadius.swift */; };
+		914BFF6B24AD752500A2703E /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF6924AD752500A2703E /* CornerRadius.swift */; };
+		914BFF6D24AD754500A2703E /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF6C24AD754500A2703E /* FeedbackGenerator.swift */; };
+		914BFF6E24AD754500A2703E /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFF6C24AD754500A2703E /* FeedbackGenerator.swift */; };
+		914BFFA924AD77E100A2703E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFA824AD77E100A2703E /* LoadingView.swift */; };
+		914BFFAA24AD77E100A2703E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFA824AD77E100A2703E /* LoadingView.swift */; };
+		914BFFAC24AD783500A2703E /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFAB24AD783500A2703E /* Items.swift */; };
+		914BFFAD24AD783500A2703E /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFAB24AD783500A2703E /* Items.swift */; };
+		914BFFB324AD7F1500A2703E /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 914BFFB224AD7F1500A2703E /* KingfisherSwiftUI */; };
+		914BFFB524AD848100A2703E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFB424AD848100A2703E /* Time.swift */; };
+		914BFFB624AD848100A2703E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFB424AD848100A2703E /* Time.swift */; };
+		914BFFBC24AD8BAD00A2703E /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFBB24AD8BAD00A2703E /* PlayerView.swift */; };
+		914BFFBD24AD8BAD00A2703E /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFBB24AD8BAD00A2703E /* PlayerView.swift */; };
+		914BFFC924ADC0C400A2703E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFC824ADC0C400A2703E /* Coordinator.swift */; };
+		914BFFCA24ADC0C400A2703E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFC824ADC0C400A2703E /* Coordinator.swift */; };
+		914BFFCD24ADC15D00A2703E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFCC24ADC15D00A2703E /* Player.swift */; };
+		914BFFCE24ADC15D00A2703E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFCC24ADC15D00A2703E /* Player.swift */; };
+		914BFFD324ADC9F000A2703E /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD224ADC9F000A2703E /* Signature.swift */; };
+		914BFFD424ADC9F000A2703E /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD224ADC9F000A2703E /* Signature.swift */; };
+		914BFFDB24ADD2A200A2703E /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD624ADD2A200A2703E /* NetworkMethod.swift */; };
+		914BFFDC24ADD2A200A2703E /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD624ADD2A200A2703E /* NetworkMethod.swift */; };
+		914BFFDD24ADD2A200A2703E /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD724ADD2A200A2703E /* NetworkEnvironment.swift */; };
+		914BFFDE24ADD2A200A2703E /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD724ADD2A200A2703E /* NetworkEnvironment.swift */; };
+		914BFFDF24ADD2A200A2703E /* NetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD824ADD2A200A2703E /* NetworkRoute.swift */; };
+		914BFFE024ADD2A200A2703E /* NetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD824ADD2A200A2703E /* NetworkRoute.swift */; };
+		914BFFE124ADD2A200A2703E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD924ADD2A200A2703E /* Network.swift */; };
+		914BFFE224ADD2A200A2703E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFD924ADD2A200A2703E /* Network.swift */; };
+		914BFFE324ADD2A200A2703E /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFDA24ADD2A200A2703E /* Resource.swift */; };
+		914BFFE424ADD2A200A2703E /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFDA24ADD2A200A2703E /* Resource.swift */; };
+		914BFFE624ADD2CF00A2703E /* EvianNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFE524ADD2CF00A2703E /* EvianNetwork.swift */; };
+		914BFFE724ADD2CF00A2703E /* EvianNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFE524ADD2CF00A2703E /* EvianNetwork.swift */; };
+		914BFFE924ADD2E500A2703E /* EvianRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFE824ADD2E500A2703E /* EvianRoute.swift */; };
+		914BFFEA24ADD2E500A2703E /* EvianRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFE824ADD2E500A2703E /* EvianRoute.swift */; };
+		914BFFEC24ADD33700A2703E /* EvianSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFEB24ADD33700A2703E /* EvianSignature.swift */; };
+		914BFFED24ADD33700A2703E /* EvianSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BFFEB24ADD33700A2703E /* EvianSignature.swift */; };
+		91CCC42824ADB31300B0B58C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 91CCC42724ADB31300B0B58C /* Moya */; };
+		91CCC42A24ADB34E00B0B58C /* EvianAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CCC42924ADB34E00B0B58C /* EvianAPI.swift */; };
+		91CCC42B24ADB34E00B0B58C /* EvianAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CCC42924ADB34E00B0B58C /* EvianAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		914BFF3924AD66DE00A2703E /* EvainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvainApp.swift; sourceTree = "<group>"; };
-		914BFF3A24AD66DE00A2703E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		914BFF3A24AD66DE00A2703E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		914BFF3B24AD66DF00A2703E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		914BFF4024AD66DF00A2703E /* Evain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914BFF4324AD66DF00A2703E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914BFF4824AD66DF00A2703E /* Evain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914BFF4A24AD66DF00A2703E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914BFF4B24AD66DF00A2703E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		914BFF5F24AD6DD200A2703E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		914BFF6624AD6FC800A2703E /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		914BFF6924AD752500A2703E /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		914BFF6C24AD754500A2703E /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
+		914BFFA824AD77E100A2703E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		914BFFAB24AD783500A2703E /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		914BFFB424AD848100A2703E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		914BFFBB24AD8BAD00A2703E /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		914BFFC824ADC0C400A2703E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		914BFFCC24ADC15D00A2703E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		914BFFD224ADC9F000A2703E /* Signature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		914BFFD624ADD2A200A2703E /* NetworkMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		914BFFD724ADD2A200A2703E /* NetworkEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
+		914BFFD824ADD2A200A2703E /* NetworkRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRoute.swift; sourceTree = "<group>"; };
+		914BFFD924ADD2A200A2703E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		914BFFDA24ADD2A200A2703E /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		914BFFE524ADD2CF00A2703E /* EvianNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvianNetwork.swift; sourceTree = "<group>"; };
+		914BFFE824ADD2E500A2703E /* EvianRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvianRoute.swift; sourceTree = "<group>"; };
+		914BFFEB24ADD33700A2703E /* EvianSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvianSignature.swift; sourceTree = "<group>"; };
+		91CCC42924ADB34E00B0B58C /* EvianAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvianAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914BFFB324AD7F1500A2703E /* KingfisherSwiftUI in Frameworks */,
+				914BFF6424AD6F9A00A2703E /* SwiftyUserDefaults in Frameworks */,
+				91CCC42824ADB31300B0B58C /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +123,12 @@
 		914BFF3824AD66DE00A2703E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				914BFFCB24ADC14D00A2703E /* Player */,
+				914BFF6F24AD761A00A2703E /* Networking */,
+				914BFF6524AD6FBA00A2703E /* Extensions */,
+				914BFF5B24AD6DB700A2703E /* Main */,
+				914BFF5A24AD67AD00A2703E /* Splash */,
 				914BFF3924AD66DE00A2703E /* EvainApp.swift */,
-				914BFF3A24AD66DE00A2703E /* ContentView.swift */,
 				914BFF3B24AD66DF00A2703E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -90,6 +160,86 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		914BFF5A24AD67AD00A2703E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				914BFF3A24AD66DE00A2703E /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		914BFF5B24AD6DB700A2703E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				914BFF5F24AD6DD200A2703E /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		914BFF6524AD6FBA00A2703E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				914BFF6624AD6FC800A2703E /* Defaults.swift */,
+				914BFF6924AD752500A2703E /* CornerRadius.swift */,
+				914BFF6C24AD754500A2703E /* FeedbackGenerator.swift */,
+				914BFFB424AD848100A2703E /* Time.swift */,
+				914BFFC824ADC0C400A2703E /* Coordinator.swift */,
+				914BFFCC24ADC15D00A2703E /* Player.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		914BFF6F24AD761A00A2703E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				914BFFD524ADD2A200A2703E /* Core */,
+				914BFFA724AD77CB00A2703E /* Loading */,
+				914BFFA324AD77B400A2703E /* Model */,
+				91CCC42924ADB34E00B0B58C /* EvianAPI.swift */,
+				914BFFE524ADD2CF00A2703E /* EvianNetwork.swift */,
+				914BFFE824ADD2E500A2703E /* EvianRoute.swift */,
+				914BFFEB24ADD33700A2703E /* EvianSignature.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		914BFFA324AD77B400A2703E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				914BFFAB24AD783500A2703E /* Items.swift */,
+				914BFFD224ADC9F000A2703E /* Signature.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		914BFFA724AD77CB00A2703E /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				914BFFA824AD77E100A2703E /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		914BFFCB24ADC14D00A2703E /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				914BFFBB24AD8BAD00A2703E /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		914BFFD524ADD2A200A2703E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				914BFFD624ADD2A200A2703E /* NetworkMethod.swift */,
+				914BFFD724ADD2A200A2703E /* NetworkEnvironment.swift */,
+				914BFFD824ADD2A200A2703E /* NetworkRoute.swift */,
+				914BFFD924ADD2A200A2703E /* Network.swift */,
+				914BFFDA24ADD2A200A2703E /* Resource.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +256,11 @@
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				914BFF6324AD6F9A00A2703E /* SwiftyUserDefaults */,
+				914BFFB224AD7F1500A2703E /* KingfisherSwiftUI */,
+				91CCC42724ADB31300B0B58C /* Moya */,
+			);
 			productName = iOS;
 			productReference = 914BFF4024AD66DF00A2703E /* Evain.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +308,11 @@
 				Base,
 			);
 			mainGroup = 914BFF3324AD66DE00A2703E;
+			packageReferences = (
+				914BFF6224AD6F9A00A2703E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				914BFFB124AD7F1500A2703E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				91CCC42624ADB31300B0B58C /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 914BFF4124AD66DF00A2703E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,7 +347,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914BFF4E24AD66DF00A2703E /* ContentView.swift in Sources */,
+				914BFF6D24AD754500A2703E /* FeedbackGenerator.swift in Sources */,
+				914BFFB524AD848100A2703E /* Time.swift in Sources */,
+				914BFF4E24AD66DF00A2703E /* SplashView.swift in Sources */,
+				914BFFE924ADD2E500A2703E /* EvianRoute.swift in Sources */,
+				914BFFCD24ADC15D00A2703E /* Player.swift in Sources */,
+				914BFFEC24ADD33700A2703E /* EvianSignature.swift in Sources */,
+				914BFFD324ADC9F000A2703E /* Signature.swift in Sources */,
+				914BFFAC24AD783500A2703E /* Items.swift in Sources */,
+				914BFFC924ADC0C400A2703E /* Coordinator.swift in Sources */,
+				914BFFE624ADD2CF00A2703E /* EvianNetwork.swift in Sources */,
+				91CCC42A24ADB34E00B0B58C /* EvianAPI.swift in Sources */,
+				914BFFDB24ADD2A200A2703E /* NetworkMethod.swift in Sources */,
+				914BFFDF24ADD2A200A2703E /* NetworkRoute.swift in Sources */,
+				914BFFDD24ADD2A200A2703E /* NetworkEnvironment.swift in Sources */,
+				914BFFE124ADD2A200A2703E /* Network.swift in Sources */,
+				914BFFE324ADD2A200A2703E /* Resource.swift in Sources */,
+				914BFFA924AD77E100A2703E /* LoadingView.swift in Sources */,
+				914BFF6724AD6FC800A2703E /* Defaults.swift in Sources */,
+				914BFF6A24AD752500A2703E /* CornerRadius.swift in Sources */,
+				914BFF6024AD6DD200A2703E /* MainView.swift in Sources */,
+				914BFFBC24AD8BAD00A2703E /* PlayerView.swift in Sources */,
 				914BFF4C24AD66DF00A2703E /* EvainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +376,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914BFF4F24AD66DF00A2703E /* ContentView.swift in Sources */,
+				914BFF6E24AD754500A2703E /* FeedbackGenerator.swift in Sources */,
+				914BFFB624AD848100A2703E /* Time.swift in Sources */,
+				914BFF4F24AD66DF00A2703E /* SplashView.swift in Sources */,
+				914BFFEA24ADD2E500A2703E /* EvianRoute.swift in Sources */,
+				914BFFCE24ADC15D00A2703E /* Player.swift in Sources */,
+				914BFFED24ADD33700A2703E /* EvianSignature.swift in Sources */,
+				914BFFD424ADC9F000A2703E /* Signature.swift in Sources */,
+				914BFFAD24AD783500A2703E /* Items.swift in Sources */,
+				914BFFCA24ADC0C400A2703E /* Coordinator.swift in Sources */,
+				914BFFE724ADD2CF00A2703E /* EvianNetwork.swift in Sources */,
+				91CCC42B24ADB34E00B0B58C /* EvianAPI.swift in Sources */,
+				914BFFDC24ADD2A200A2703E /* NetworkMethod.swift in Sources */,
+				914BFFE024ADD2A200A2703E /* NetworkRoute.swift in Sources */,
+				914BFFDE24ADD2A200A2703E /* NetworkEnvironment.swift in Sources */,
+				914BFFE224ADD2A200A2703E /* Network.swift in Sources */,
+				914BFFE424ADD2A200A2703E /* Resource.swift in Sources */,
+				914BFFAA24AD77E100A2703E /* LoadingView.swift in Sources */,
+				914BFF6824AD6FC800A2703E /* Defaults.swift in Sources */,
+				914BFF6B24AD752500A2703E /* CornerRadius.swift in Sources */,
+				914BFF6124AD6DD200A2703E /* MainView.swift in Sources */,
+				914BFFBD24AD8BAD00A2703E /* PlayerView.swift in Sources */,
 				914BFF4D24AD66DF00A2703E /* EvainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35Y8HMS8ZN;
+				DEVELOPMENT_TEAM = A2NMX2E8QC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -343,7 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35Y8HMS8ZN;
+				DEVELOPMENT_TEAM = A2NMX2E8QC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -439,6 +639,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		914BFF6224AD6F9A00A2703E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sunshinejr/SwiftyUserDefaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		914BFFB124AD7F1500A2703E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+		91CCC42624ADB31300B0B58C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		914BFF6324AD6F9A00A2703E /* SwiftyUserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 914BFF6224AD6F9A00A2703E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
+			productName = SwiftyUserDefaults;
+		};
+		914BFFB224AD7F1500A2703E /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 914BFFB124AD7F1500A2703E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		91CCC42724ADB31300B0B58C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91CCC42624ADB31300B0B58C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 914BFF3424AD66DE00A2703E /* Project object */;
 }

@@ -20,12 +20,14 @@ extension NetworkRoute {
         return nil
     }
 
-    func create(for enviroment: NetworkEnvironment) -> URLRequest {
+    func create(for enviroment: NetworkEnvironment, with data: Data? = nil) -> URLRequest {
 
         var request = URLRequest(url: URL(string: enviroment.rawValue + path)!)
         request.allHTTPHeaderFields = headers
         request.httpMethod = method.rawValue.uppercased()
-
+        if data != nil {
+            request.httpBody = data
+        }
         return request
     }
 }

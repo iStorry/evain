@@ -6,3 +6,26 @@
 //
 
 import Foundation
+
+enum EvianRoute {
+    case signature
+}
+
+extension EvianRoute: NetworkRoute {
+
+    var path: String {
+        switch self {
+        case .signature:
+            return "/signature"
+        }
+    }
+
+    var method: NetworkMethod {
+        switch self {
+        case .signature:
+            return .post
+        }
+    }
+    
+    
+}

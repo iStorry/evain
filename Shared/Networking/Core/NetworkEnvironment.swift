@@ -8,6 +8,5 @@
 import Foundation
 
 enum NetworkEnvironment: String {
-    case release = "https://api.smallworld.asia/v1"
-    case debug = "https://debug.smallworld.asia/v1"
+    case host = ""
 }

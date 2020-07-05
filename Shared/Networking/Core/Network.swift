@@ -16,8 +16,8 @@ protocol Network {
 
 extension Network {
 
-    func fetch<T: Decodable>(route: NetworkRoute) -> AnyPublisher<T, Error> {
-        let request = route.create(for: enviroment)
+    func fetch<T: Decodable>(route: NetworkRoute, with data: Data?) -> AnyPublisher<T, Error> {
+        let request = route.create(for: enviroment, with: data)
         return URLSession.shared.dataTaskPublisher(for: request).tryCompactMap { result in
             try self.decoder.decode(T.self, from: result.data)
         }.receive(on: RunLoop.main).eraseToAnyPublisher()

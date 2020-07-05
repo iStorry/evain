@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct EvianNetwork: Network {
+    var enviroment: NetworkEnvironment = .host
+    var decoder: JSONDecoder = JSONDecoder()
+}
+
